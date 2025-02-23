@@ -1,0 +1,29 @@
+{
+    "name": "simple-api-router",
+    "version": "1.0.0",
+    "description": "Ein API-Router für Backend-Routen",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node index.js"
+    },
+    "keywords": [
+        "api-router",
+        "backend",
+        "node"
+    ],
+    "author": "NotNexx",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "jest": "^27.0.0"
+    },
+    "bin": {
+        "sar": "./bin/cli.js"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
