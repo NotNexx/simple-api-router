@@ -1,12 +1,8 @@
 {
-    "name": "simple-api-router",
-    "version": "1.0.0",
-    "description": "Ein API-Router für Backend-Routen",
+    "name": "@notnexx/n-sar",
+    "version": "1.0.1",
+    "description": "A simple API router for Express.js",
     "main": "index.js",
-    "scripts": {
-        "test": "jest",
-        "start": "node index.js"
-    },
     "keywords": [
         "api-router",
         "backend",
@@ -21,7 +17,7 @@
         "jest": "^27.0.0"
     },
     "bin": {
-        "sar": "./bin/cli.js"
+        "n-sar": "./bin/cli.js"
     },
     "publishConfig": {
         "access": "public"

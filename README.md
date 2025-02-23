@@ -8,18 +8,18 @@
 To install the package in an existing project, use the following command:
 
 ```bash
-npm install simple-api-router
+npm install @notnexx/n-sar
 ```
 
 ## Usage
 
 ### 1. Manual Setup
 
-Create an Express app and use `simple-api-router` to automatically load all routes from the `api/` directory:
+Create an Express app and use `@notnexx/n-sar` to automatically load all routes from the `api/` directory:
 
 ```javascript
 const express = require('express');
-const loadRoutes = require('simple-api-router');
+const loadRoutes = require('@notnexx/n-sar');
 
 const app = express();
 const PORT = 3000;
@@ -37,7 +37,7 @@ app.listen(PORT, () => {
 The package allows easy creation of a sample project with a predefined structure:
 
 ```bash
-npx sar my-api-project
+npx n-sar my-api-project
 ```
 
 This creates a new folder `my-api-project` with the following structure:
