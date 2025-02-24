@@ -1,7 +1,7 @@
 # Simple API Router
 
 ## Overview
-**Simple API Router** is a lightweight npm package that simplifies setting up Express APIs. It automatically detects all API routes in a defined directory and binds them to an Express app.
+**Simple API Router** is a lightweight npm package that simplifies setting up Express APIs. It automatically detects all API routes in a defined directory and binds them to an Express app. Additionally, it provides an API client generator for frontend integration and automatic API documentation generation.
 
 ## Installation
 
@@ -37,7 +37,7 @@ app.listen(PORT, () => {
 The package allows easy creation of a sample project with a predefined structure:
 
 ```bash
-npx n-sar my-api-project
+npx n-sar create my-api-project
 ```
 
 This creates a new folder `my-api-project` with the following structure:
@@ -58,6 +58,32 @@ cd my-api-project
 npm install
 node server.js
 ```
+
+### 3. Generate an API Client for Frontend Integration
+
+With `n-sar`, you can automatically generate a frontend API client that connects to your backend (localhost or your server domain/IP):
+
+```bash
+npx n-sar export-routes http://localhost:3000
+```
+
+This creates an `apiClient.js` file with functions for each detected route, making API calls simple:
+
+```javascript
+import APIClient from './apiClient';
+
+APIClient.user_get().then(response => console.log(response));
+```
+
+### 4. Generate API Documentation
+
+You can automatically generate API documentation based on your routes:
+
+```bash
+npx n-sar generate-docs
+```
+
+This will create an `API_DOCS.md` file containing all detected API endpoints and their methods.
 
 ## API Definitions
 
